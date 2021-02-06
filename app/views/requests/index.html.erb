@@ -1,0 +1,23 @@
+<div class="requests-wrapper">
+  <div class="requests">
+    <% @requests.each do |request| %>
+      <div class="request">
+        <div class="request-title">
+          <h3><%= link_to "#{request.title}", request_path(request.id) %></h2>
+        </div>
+        <div class="main-text">
+          <div class="request-text">
+            <p><strong>Request</strong><br><%= request.text %></p>
+          </div>
+          <div class="request-name">
+          <a href="/users/<%= request.user.id %>">
+            <p><strong>投稿者</strong>  <%= request.user.nickname %></p>
+          </a>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+<div class="push"></div>
+

@@ -1,0 +1,15 @@
+<div class="request_post_wrapper">
+  <div class="request_post">
+    <h3>依頼投稿</h3>
+    <ul>
+      <%= form_with(model: @request, local: true) do |form| %>
+      <%= render 'layouts/error_messages', model: form.object %>
+        <li class="title"><%= form.text_field :title, placeholder: "依頼" %></li>
+        <li class="text"><%= form.text_area :text, placeholder: "依頼内容", class: "text_area" %></li>
+        <li><%= form.collection_select(:category_id, Category.all, :id, :name, {}, {class:"category-select"}) %></li>
+        <li class="send"><%= form.submit "SEND" %></li>
+      <% end %>
+    
+    </ul>
+  </div>
+</div>

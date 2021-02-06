@@ -1,0 +1,36 @@
+<div class="show-wrapper">
+  <div class="show-main">
+    <div class="show-name">
+      <p><%= @nickname %>さんの投稿一覧</p>
+      <%= render "relationships/follow_button", user: @user %>
+    </div>
+    <% @requests.each do |request| %>
+    <div class="show-title">
+      <p><%= link_to "#{request.title}", request_path(request.id), method: :get%></p>
+    </div>
+  <% end %>
+
+  <div class="follow-wrapper">
+    <div class="follow-number">
+      <ul class="follow-number-list">
+        <li>follow: <%= current_user.followings.count %></li>
+        <li>follower: <%= current_user.followers.count %></li>
+      </ul>
+    </div>
+    
+    <div class="follow-name">
+      <div class="follow-name-list">
+        <ul class="follow-member">
+          <li>follow<br><% @user.followings.each do |user| %>
+                <%= link_to "#{user.nickname}", "/users/#{user.id}" %>
+              <% end %></li>
+
+          <li>follower<br><% @user.followers.each do |user| %>
+                <%= link_to "#{user.nickname}", "/users/#{user.id}" %>
+              <% end %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>

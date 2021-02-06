@@ -1,0 +1,29 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.follow-wrapper{
+  width: 100%;
+  // border: 1px solid;
+}
+
+.follow-number-list{
+  display: flex;
+  justify-content: center;
+}
+
+.follow-number-list li{
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.follow-name{
+  // border: 1px solid;
+}
+
+.follow-member{
+  margin: 10px;
+}
+
+.follow-member li{
+  margin: 15px;
+}

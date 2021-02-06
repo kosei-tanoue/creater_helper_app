@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CreaterHelperApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <div class="top-wrapper" >
+        <div class="top">
+          <div class="top-left">
+            <a href="/"><h1>Creater Helper</h1></a>
+          </div>
+          <div class="top-right">
+            <% if user_signed_in? %>
+              <ul class="top-me">
+                <li><%= link_to "マイページ", "/users/#{current_user.id}" %></li>
+                <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+                <li><%= link_to "投稿する", new_request_path %></li>
+              </ul>
+            <% else %>
+              <ul class="top-me">
+                <li><%= link_to "ログイン", new_user_session_path, class: "post" %></li>
+                <li><%= link_to "新規登録", new_user_registration_path, class: "post" %></li>
+              </ul>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </header>
+    <%= yield %>
+    <footer>
+      <div class="footer-wrapper">
+        <p>Creater Helper App created by Me</p>
+      </div>
+    </footer>
+  </body>
+</html>

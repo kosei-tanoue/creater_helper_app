@@ -1,0 +1,204 @@
+// Place all the styles related to the requests controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.request_post_wrapper{
+  // border: 1px solid red;
+  width: 50%;
+  height: 50%;
+
+  margin: 0 auto;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+}
+
+.request_post{
+
+}
+
+.request_post h3{
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.request_post li{
+  margin-bottom: 25px;
+
+}
+
+input[type="text"] {
+  // width: 500px;
+  // height: 30px;
+  // margin: 20px 0px 0px 0;
+}
+
+.text_area {
+  width:  500px;
+  height: 200px;
+  margin-top: 20px;
+}
+
+input[type="submit"]{
+  // width: 70px;
+  // height: 40px;
+  // background-color: blue;
+  // margin-top: 20px;
+}
+
+.category-select{
+  height: 30px;
+  width: 250px;
+}
+
+.requests-wrapper{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+  // border: 1px solid red;
+  width: 600px;
+  margin: 0 auto;
+  // position: relative;
+}
+
+.comments{
+  // border: 1px solid;
+  margin-top: 30px;
+  // display: flex;
+  // flex-direction: ;
+}
+
+.request{
+    // padding: 20px 80px;
+    margin: 20px 0px;
+    // border: 1px solid red;
+    width: 6000px;
+    // position: absolute;
+    // line-height: 300px;
+  }
+  
+  .request-title{
+    background-color: #eee;
+    // width: auto;
+    height: 30px;
+    // padding: 4px;
+    
+    border: 2px solid;
+    border-bottom: transparent;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    text-align: center;
+    word-wrap: break-word;
+    // position: relative;
+  }
+  
+  .request-name{
+    margin-top: 10px;
+    position: absolute;
+    // border: 1px solid;
+    padding: 20px;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .main-text{
+    background-color: #fff;
+    width: 600px;
+    position: relative;
+    padding: 10px;
+    
+    border: 2px solid;
+  }
+  
+  .request-text{
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 500px;
+  }
+  
+  
+  .request{
+    margin-top: 20px;
+    // margin-left: 20px;
+ 
+    display: inline-block;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .request-text p{
+    word-wrap: break-word;
+    
+    
+  }
+  .requests{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+  .request-wrapper{
+    display: flex;
+}
+
+
+
+.show-wrapper{
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  padding: 10px;
+  width: 500px;
+}
+
+.show-name{
+  text-align: center;
+  padding: 10px;
+}
+
+.show-main{
+  width: 500px;
+  margin: 0 auto;
+}
+
+.show-title{
+  background-color: #fff;
+  width: auto;
+  margin: 10px;
+  padding: 5px 8px;
+  border: 1px solid;
+  // border-bottom: transparent;
+  border-radius: 8px;
+
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.test-ul{
+  display: flex;
+  align-items: flex-start;
+  position: fixed;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  bottom: 0;
+  // border: 1px solid;
+  line-height: 30px;
+}
+
+.test-ul li{
+  padding-right: 5px;
+}
+
+
+.more_list{
+  display: flex;
+
+}

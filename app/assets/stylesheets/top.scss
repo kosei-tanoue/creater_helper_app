@@ -1,0 +1,60 @@
+// Place all the styles related to the top controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.site-explain{
+  text-align: center;
+  // border: 1px solid red;
+  padding: 50px;
+}
+
+.site-explain h2{
+  line-height: 50px;
+}
+
+ul{
+  text-align: center;
+  padding: 60px 0px;
+  align-items: center;
+  height: 70px;
+}
+
+.list{
+  color: white;
+  // height: 400px;
+  line-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0px;
+  margin: 80px auto;
+  padding: 0;
+  width: 1000px;
+  // border: 1px solid #666;
+}
+
+.list li{
+  color: black;
+  border-radius: 50%;
+  border: 2px solid black;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 20px;
+  margin: 0.2em;
+  padding: 0.5em;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+}
+
+.sentence{
+  color: #00164a;
+}
+
+.content-a{
+  background-color:#eee;
+}
+.content-b{
+  background-color: #eee;
+}
+.content-c{
+  background-color: #eee;
+}
