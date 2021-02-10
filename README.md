@@ -10,10 +10,19 @@
 
 
 # URL
-
+[creater_helper](https://stark-everglades-90094.herokuapp.com/)
 
 # テスト用アカウント
-test
+## テスター1
+  name: test1
+  email: test@1
+  password: aaaaaa
+
+
+## テスター2
+  name: test2
+  email: test@2
+  password: aaaaaa
 
 # 利用方法
   作成したアカウントでログインした後にTOPページへと遷移する。
@@ -167,5 +176,25 @@ test
 
 
 # ローカルでの動作方法
+## 開発環境
+  OS
+  macOS Catalina バージョン 10.15.6
 
+  rubyバージョン
+  ruby 2.6.5p114 (2019-10-01 revision 67812) x86_64-darwin19
 
+  MySQLバージョン
+  mysql  Ver 14.14 Distrib 5.6.47
+
+  Railsバージョン
+  Rails 6.0.3.4
+
+  RubyGemバージョン
+  3.0.3
+
+## ダウンロード
+  ターミナルでダウンロードしたいディレクトリ上で
+  git clone https://github.com/kosei-tanoue/creater_helper_app.git
+
+  ターミナルでダウンロードしたディレクトリへ移動し、「rails s」コマンドを実行後「localhost:3000」へアクセス。
+  ]
