@@ -197,4 +197,3 @@
   git clone https://github.com/kosei-tanoue/creater_helper_app.git
 
   ターミナルでダウンロードしたディレクトリへ移動し、「rails s」コマンドを実行後「localhost:3000」へアクセス。
-  ]
