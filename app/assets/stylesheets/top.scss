@@ -18,17 +18,19 @@ ul{
   height: 70px;
 }
 
+.point{
+  font-size: 20px;
+}
+
 .list{
   color: white;
-  // height: 400px;
   line-height: 80px;
   display: flex;
   justify-content: space-between;
   padding: 60px 0px;
   margin: 80px auto;
   padding: 0;
-  width: 1000px;
-  // border: 1px solid #666;
+  width: 500px;
 }
 
 .list li{
@@ -53,8 +55,5 @@ ul{
   background-color:#eee;
 }
 .content-b{
-  background-color: #eee;
-}
-.content-c{
   background-color: #eee;
 }
