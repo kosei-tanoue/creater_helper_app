@@ -10,10 +10,19 @@
 
 
 # URL
-
+[creater_helper](https://stark-everglades-90094.herokuapp.com/)
 
 # テスト用アカウント
-test
+## テスター1
+  name: test1
+  email: test@1
+  password: aaaaaa
+
+
+## テスター2
+  name: test2
+  email: test@2
+  password: aaaaaa
 
 # 利用方法
   作成したアカウントでログインした後にTOPページへと遷移する。
