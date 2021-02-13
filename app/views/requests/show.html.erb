@@ -20,6 +20,9 @@
                 <li>
                   <%= link_to '削除', request_path(@request.id), method: :delete %>
                 </li>
+                <li>
+                  <%= @request.category.name %>
+                </li>
               <% end %>
             </ul>
           </div>
