@@ -13,15 +13,15 @@
               <p><strong>投稿者</strong>  <%= @request.user.nickname %></p>
             </a>
             <ul class="test-ul">
+                <li>
+                  <%= @request.category.name %>
+                </li>
               <% if user_signed_in? && current_user.id == @request.user_id %>
                 <li>
                   <%= link_to '編集', edit_request_path(@request.id), method: :get %>
                 </li>
                 <li>
                   <%= link_to '削除', request_path(@request.id), method: :delete %>
-                </li>
-                <li>
-                  <%= @request.category.name %>
                 </li>
               <% end %>
             </ul>
