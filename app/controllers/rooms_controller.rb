@@ -12,7 +12,6 @@ class RoomsController < ApplicationController
   def create
     @room = Room.new(room_params)
     if @room.save
-      # binding.pry
       redirect_to "/rooms/#{@room.id}/messages"
     else
       render :new
