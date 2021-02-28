@@ -1,12 +1,21 @@
-.search{
+
+
+.search-input{
+  width: 600px;
+  height: 50px;
+  padding: 5px;
+}
+
+.search-btn{
+  width: 75px;
+  margin-left: 3px;
 }
 
 .search-form{
-  border: 1px solid;
-  padding: 10px;
   margin: 0 auto;
   width: 600px;
   text-align: center;
+  display: flex;
 }
 
 .request_post_wrapper{
