@@ -1,5 +1,5 @@
 class RequestsController < ApplicationController
-  before_action :authenticate_user!, except: [:index, :show]
+  before_action :authenticate_user!, except: [:index, :show, :search]
   before_action :set_request, only: [:edit, :show, :update]
   before_action :move_to_root, only: [:edit]
 
@@ -45,6 +45,10 @@ class RequestsController < ApplicationController
   def show
     @comment = Comment.new
     @comments = @request.comments.includes(:user)
+  end
+
+  def search
+    @requests = Request.search(params[:keyword])
   end
 
 
