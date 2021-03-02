@@ -2,6 +2,14 @@ class Request < ApplicationRecord
   belongs_to :user
   has_many :comments, dependent: :destroy
 
+  def self.search(search)
+    if search != ""
+      Request.where('text LIKE(?)', "%#{search}%")
+    else
+      Request.all
+    end
+  end
+
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :category
 
