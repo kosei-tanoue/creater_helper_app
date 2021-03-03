@@ -1,0 +1,34 @@
+<div class="requests-wrapper">
+  <div class="requests">
+    <% @requests.each do |request| %>
+    <div class="request">
+      <div class="request-title">
+        <h3><%= request.title %></h2>
+      </div>
+      <div class="main-text">
+        <div class="request-text">
+          <p><strong>Request</strong><br><%= request.text %></p>
+        </div>
+        <div class="request-name">
+          <a href="/users/<%= request.user.id %>">
+            <p><strong>投稿者</strong>  <%= request.user.nickname %></p>
+          </a>
+          <ul class="test-ul">
+              <li>
+                <%= request.category.name %>
+              </li>
+            <% if user_signed_in? && current_user.id == request.user_id %>
+              <li>
+                <%= link_to '編集', edit_request_path(request.id), method: :get %>
+              </li>
+              <li>
+                <%= link_to '削除', request_path(request.id), method: :delete %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
