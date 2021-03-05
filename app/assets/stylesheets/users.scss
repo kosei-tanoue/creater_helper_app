@@ -14,9 +14,12 @@
 
 
 .follow-member{
-  margin: 10px;
+  // padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .follow-member li{
-  margin: 15px;
+  padding: 15px;
 }
