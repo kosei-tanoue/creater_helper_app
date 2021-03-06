@@ -21,11 +21,11 @@
     <div class="follow-name">
       <div class="follow-name-list">
         <ul class="follow-member">
-          <li><h3>follow</h3><% @user.followings.each do |user| %><br>
+          <li><h3 class="follow-border">follow</h3><% @user.followings.each do |user| %><br>
                 <%= link_to "#{user.nickname}", "/users/#{user.id}" %>
               <% end %></li>
 
-          <li><h3>follower</h3><% @user.followers.each do |user| %><br>
+          <li><h3 class="follower-border">follower</h3><% @user.followers.each do |user| %><br>
                 <%= link_to "#{user.nickname}", "/users/#{user.id}" %>
               <% end %></li>
         </ul>
