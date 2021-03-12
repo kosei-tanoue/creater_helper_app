@@ -3,13 +3,15 @@
 }
 
 .follow-number-list{
-  display: flex;
-  justify-content: center;
 }
 
 .follow-number-list li{
   margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   font-size: 14px;
+  margin-bottom: 5px;
 }
 
 
@@ -21,6 +23,7 @@
 
 .follow-member li{
   padding: 15px;
+
 }
 
 .follow-border{
@@ -34,3 +37,10 @@
   padding: 3px 10px;
   background-color:#fffc;
 }
+
+.member{
+  font-weight: bold;
+}
+
+
+
